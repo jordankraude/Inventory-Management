@@ -237,13 +237,13 @@ namespace Inventory_Management
             DisplayProducts();
 
             Console.Write("Enter the number of the product: ");
-            int productIndex = ReadIntInput();
+            int productIndex = ReadIntInput() ;
 
             // Data validation for correct input
             if (productIndex >= 0 && productIndex < inventory.Count)
             {
                 inventory.RemoveAt(productIndex);
-                Console.WriteLine($"{inventory[productIndex].Name}, Barcode: {inventory[productIndex].Barcode} removed succesfully");
+                Console.WriteLine("Product removed succesfully");
             }
             else
             {

@@ -5,7 +5,7 @@ In this repository, I wrote a program that is designed for inventory management.
 The purpose of writing this algorithm is to establish a solid foundation for developing a web-based user interface (UI) for interacting with a cloud database using the C# programming language. By implementing the inventory management system as a console application first, I aim to ensure that the core functionalities for managing inventory, such as adding, viewing, updating, and removing products, are robustly implemented and tested. This console application serves as the backend logic for the eventual web UI, providing the necessary functionality to interact with the cloud database. By building upon this foundation, I intend to create a seamless and intuitive web interface that enables users to efficiently manage inventory data stored in the cloud, enhancing accessibility, scalability, and usability of the inventory management system.
 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/GGlESvJeOnk)
 
 # Development Environment
 
