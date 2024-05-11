@@ -237,7 +237,7 @@ namespace Inventory_Management
             DisplayProducts();
 
             Console.Write("Enter the number of the product: ");
-            int productIndex = ReadIntInput() ;
+            int productIndex = ReadIntInput() - 1 ;
 
             // Data validation for correct input
             if (productIndex >= 0 && productIndex < inventory.Count)
