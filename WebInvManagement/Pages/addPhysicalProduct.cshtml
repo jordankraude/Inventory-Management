@@ -1,0 +1,49 @@
+@page
+@namespace WebInvManagement.Pages
+@model AddPhysicalProductModel
+@{
+    ViewData["Title"] = "Physical Product Addition";
+    Layout = "_Layout"; // Specify the layout file to use
+}
+
+<h1 class="mb-3">@ViewData["Title"]</h1>
+
+<div class="container">
+    <form method="post">
+        <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="productName" asp-for="Name" placeholder="Enter product name">
+            <span asp-validation-for="Name" class="validation-error"></span>
+        </div>
+        <div class="mb-3">
+            <label for="productDescription" class="form-label">Description</label>
+            <textarea class="form-control" id="productDescription" asp-for="Description" rows="3" placeholder="Enter description"></textarea>
+            <span asp-validation-for="Description" class="validation-error"></span>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="productPrice" class="form-label">Price</label>
+                <input type="text" class="form-control" id="productPrice" asp-for="Price" placeholder="Enter price">
+                <span asp-validation-for="Price" class="validation-error"></span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="productQuantity" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="productQuantity" asp-for="Quantity" placeholder="Enter quantity">
+                <span asp-validation-for="Quantity" class="validation-error"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="productWeight" class="form-label">Weight</label>
+                <input type="text" class="form-control" id="productWeight" asp-for="Weight" placeholder="Enter weight">
+                <span asp-validation-for="Weight" class="validation-error"></span>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="productBarcode" class="form-label">Barcode</label>
+                <input type="text" class="form-control" id="productBarcode" asp-for="Barcode" placeholder="Enter barcode">
+                <span asp-validation-for="Barcode" class="validation-error"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+</div>
