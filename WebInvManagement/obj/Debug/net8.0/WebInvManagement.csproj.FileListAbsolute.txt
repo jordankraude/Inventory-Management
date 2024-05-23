@@ -48,3 +48,5 @@ C:\Users\Jordan\Desktop\Workspace\CSE310\Inventory-Management\WebInvManagement\b
 C:\Users\Jordan\Desktop\Workspace\CSE310\Inventory-Management\WebInvManagement\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\Jordan\Desktop\Workspace\CSE310\Inventory-Management\WebInvManagement\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\Jordan\Desktop\Workspace\CSE310\Inventory-Management\WebInvManagement\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Jordan\Desktop\Workspace\CSE310\Inventory-Management\WebInvManagement\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\Jordan\Desktop\Workspace\CSE310\Inventory-Management\WebInvManagement\bin\Debug\net8.0\System.Security.Permissions.dll

@@ -1,5 +1,6 @@
 using MongoDB.Driver;
 using Microsoft.Extensions.Configuration;
+using WebInvManagement.Models;
 
 namespace WebInvManagement.Pages
 {
@@ -19,5 +20,19 @@ public class MongoDBService
     {
         return _database.GetCollection<Product>(collectionName);
     }
+
+    public async Task InsertProductAsync(Product product, string collectionName)
+    {
+        var collection = _database.GetCollection<Product>(collectionName);
+        await collection.InsertOneAsync(product);
+    }
+
+        // Example method to delete a document from a collection based on a filter
+    public async Task DeleteProductAsync(FilterDefinition<Product> filter, string collectionName)
+    {
+        var collection = _database.GetCollection<Product>(collectionName);
+        await collection.DeleteOneAsync(filter);
+    }
+
 }
 }

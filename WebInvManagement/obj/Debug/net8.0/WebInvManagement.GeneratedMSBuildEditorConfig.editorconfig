@@ -18,12 +18,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Jordan\Desktop\Workspace\CSE310\Inventory-Management\WebInvManagement
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/addDigitalProduct.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkRGlnaXRhbFByb2R1Y3QuY3NodG1s
+[C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/Account/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/addPhysicalProduct.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkUGh5c2ljYWxQcm9kdWN0LmNzaHRtbA==
+[C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/Account/logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxsb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/addProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/findProduct.cshtml]
@@ -40,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/updateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXBkYXRlUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/updateProductSubmission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXBkYXRlUHJvZHVjdFN1Ym1pc3Npb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jordan/Desktop/Workspace/CSE310/Inventory-Management/WebInvManagement/Pages/viewInventory.cshtml]

@@ -1,15 +1,20 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MongoDB.Driver;
 using System.Collections.Generic;
+using WebInvManagement.Models;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
 
 namespace WebInvManagement.Pages
 {
+    [Authorize]
     public class ViewInventoryModel : PageModel
     {
         private readonly MongoDBService _mongoDBService;
 
-        public ViewInventoryModel(WebInvManagement.Pages.MongoDBService mongoDBService)
+        public ViewInventoryModel(MongoDBService mongoDBService)
         {
             _mongoDBService = mongoDBService;
             Products = new List<Product>(); // Initialize Products list

@@ -3,6 +3,7 @@
 @model ViewInventoryModel
 @{
     ViewData["Title"] = "Inventory Review";
+    Layout = "_Layout";
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -15,6 +16,7 @@
             <th>Price</th>
             <th>Quantity</th>
             <th>Barcode</th>
+            <th>Weight</th>
         </tr>
     </thead>
     <tbody>
@@ -26,6 +28,7 @@
                 <td>@product.Price</td>
                 <td>@product.Quantity</td>
                 <td>@product.Barcode</td>
+                <td>@product.Weight</td>
             </tr>
         }
     </tbody>

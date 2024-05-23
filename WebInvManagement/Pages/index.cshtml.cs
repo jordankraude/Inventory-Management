@@ -1,38 +1,24 @@
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebInvManagement.Pages
+public class LoginModel : PageModel
 {
-    public class IndexModel : PageModel
+    public IActionResult OnGet(string returnUrl = "/")
     {
-        public IActionResult OnGet()
-        {
-            return Page();
-        }
+        // Display the login page
+        return Page();
+    }
 
-        public IActionResult OnPostAddPhysicalProduct()
-        {
-            return RedirectToPage("/AddPhysicalProduct");
-        }
-
-        public IActionResult OnPostAddDigitalProduct()
-        {
-            return RedirectToPage("/AddDigitalProduct");
-        }
-
-        public IActionResult OnPostViewInventory()
-        {
-            return RedirectToPage("/ViewInventory");
-        }
-
-        public IActionResult OnPostEditProduct()
-        {
-            return RedirectToPage("/EditProduct");
-        }
-
-        public IActionResult OnPostDeleteProduct()
-        {
-            return RedirectToPage("/DeleteProduct");
-        }
+    public IActionResult OnPost(string returnUrl = "/dashboard")
+    {
+        // Redirect to the external authentication provider (Google)
+        var redirectUrl = Url.Page("./ExternalLogin", pageHandler: null, values: new { ReturnUrl = returnUrl });
+        var properties = new AuthenticationProperties { RedirectUri = redirectUrl };
+        return new ChallengeResult(GoogleDefaults.AuthenticationScheme, properties);
     }
 }
+
